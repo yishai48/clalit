@@ -33,7 +33,7 @@ function Home() {
         </thead>
 
         <tbody>
-          {coins.map(({ CurrentChange, CurrentExchangeRate, Key, LastUpdate,Unit   }) => (CurrentChange<0?console.log(CurrentChange):
+          {coins.map(({ CurrentChange, CurrentExchangeRate, Key, LastUpdate,Unit   }) => (CurrentChange>0?console.log(CurrentChange):
             <tr key={CurrentChange}>
             <td>{CurrentChange}</td>
             <td>{CurrentExchangeRate}</td>
